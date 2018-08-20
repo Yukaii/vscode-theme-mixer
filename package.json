@@ -4,6 +4,10 @@
     "description": "Theme vscode with seperated UI theme & syntax theme",
     "version": "0.0.1",
     "publisher": "Yukai",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Yukaii/vscode-theme-mixer.git"
+    },
     "engines": {
         "vscode": "^1.26.0"
     },
@@ -11,14 +15,14 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
+        "onCommand:vscode-mixer.start"
     ],
     "main": "./out/extension",
     "contributes": {
         "commands": [
             {
-                "command": "extension.sayHello",
-                "title": "Hello World"
+                "command": "vscode-mixer.start",
+                "title": "Theme Mixer: Start mixing themes"
             }
         ]
     },
@@ -35,5 +39,8 @@
         "tslint": "^5.8.0",
         "@types/node": "^8.10.25",
         "@types/mocha": "^2.2.42"
+    },
+    "dependencies": {
+        "jsonc-parser": "^2.0.1"
     }
 }
